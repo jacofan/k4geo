@@ -29,10 +29,11 @@
   </define>
 
   <include ref="./DectDimensions.xml" />
+  <!-- comment out from beampipe to Si Wrapper to do photon-pi0 separation studies -->
 
   <!-- shape based model of the beam pipe -->
-  <include ref="../../../MDI/compact/MDI_o1_v00/Beampipe_o4_v05.xml" />
-  <include ref="../../../MDI/compact/MDI_o1_v00/BeamInstrumentation_o1_v01.xml" />
+  <!-- <include ref="../../../MDI/compact/MDI_o1_v00/Beampipe_o4_v05.xml" /> -->
+  <!-- <include ref="../../../MDI/compact/MDI_o1_v00/BeamInstrumentation_o1_v01.xml" /> -->
   
   <!-- In order to use the CAD beampipe, build k4geo with the following CMake option: 
   cmake -D INSTALL_BEAMPIPE_STL_FILES=ON which will download the files needed -->
@@ -40,10 +41,10 @@
   <!-- <include ref="../../../MDI/compact/MDI_o1_CADBased_v01/MDI_o1_CADBased_v01_collection.xml" />
   <world material="Vacuum"/> -->
 
-  <include ref="LumiCal.xml"/>
-  <include ref="../../../IDEA/compact/IDEA_o1_v04/VertexComplete_o1_v04.xml"/>
-  <include ref="DriftChamber_o1_v02.xml"/>          <!-- symbolic link to ../../../IDEA/compact/IDEA_o1_v03/DriftChamber_o1_v02.xml -->
-  <include ref="../../../IDEA/compact/IDEA_o1_v04/SiliconWrapper_o1_v02.xml"/>
+  <!-- <include ref="LumiCal.xml"/> -->
+  <!-- <include ref="../../../IDEA/compact/IDEA_o1_v04/VertexComplete_o1_v04.xml"/> -->
+  <!-- <include ref="DriftChamber_o1_v02.xml"/> -->          <!-- symbolic link to ../../../IDEA/compact/IDEA_o1_v03/DriftChamber_o1_v02.xml -->
+  <!-- <include ref="../../../IDEA/compact/IDEA_o1_v04/SiliconWrapper_o1_v02.xml"/> -->
   <include ref="ECalBarrel_thetamodulemerged.xml"/> <!-- Caution: removing the ECAL barrel also removes the magnetic field! The solenoid is hosted in the ECAL barrel cryostat and therefore the B-field is defined there -->
   <include ref="HCalBarrel_TileCal_v03.xml"/>
   <include ref="ECalEndcaps_Turbine_o1_v03.xml"/>
