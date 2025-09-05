@@ -22,13 +22,15 @@
 
        http://www.engineeringtoolbox.com/air-composition-24_212.html
   -->
-
+ <!-- Air considered as vacuum for photon-pi0 studies-->
   <material name="Air">
-    <D type="density" unit="g/cm3" value="0.0012"/>
+  <!-- <D type="density" unit="g/cm3" value="0.0012"/> 
     <fraction n="0.754" ref="N"/>
     <fraction n="0.234" ref="O"/>
-    <fraction n="0.012" ref="Ar"/>
-  </material>
+    <fraction n="0.012" ref="Ar"/> -->
+    <D type="density" unit="g/cm3" value="0.00000001" />
+    <fraction n="1" ref="H" />
+  </material> 
 
   <material name="Vacuum">
     <D type="density" unit="g/cm3" value="0.00000001" />
